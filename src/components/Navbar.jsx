@@ -10,7 +10,7 @@ export const Navbar = () => {
         <h2 className="text-stone-300 font-semibold text-lg">Diego Martinez</h2>
 
         <nav className="hidden md:flex space-x-3 text-stone-400">
-            <a href="#" className="hover:text-stone-300 font-semibold transition-all duration-300">Projects</a>
+            <a href="#projects" className="hover:text-stone-300 font-semibold transition-all duration-300">Projects</a>
             <a href="#" className="hover:text-stone-300 font-semibold transition-all duration-300">About</a>
             <a href="#" className="hover:text-stone-300 font-semibold transition-all duration-300">Contact</a>
         </nav>

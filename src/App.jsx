@@ -1,3 +1,4 @@
+import { GridProjects } from './components/GridProjects';
 import { Hero } from './components/Hero';
 import { MobileNavbar } from './components/MobileNavbar';
 import { Navbar } from './components/Navbar'
@@ -12,17 +13,19 @@ function App() {
 
 
   return (
-    <>
+    <div className='bg-stone-900'>
       {
         isActiveMobile && <MobileNavbar/>
       }
       <Navbar />
 
 
-      <main className='bg-stone-900 w-full h-200'>
-        <Hero />
+      <Hero />
+      <main className='container mx-auto  flex-1'>
+
+        <GridProjects />
       </main>
-    </>
+    </div>
   )
 }
 
