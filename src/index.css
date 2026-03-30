@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* Para que la animacion al dar click a un enlace sea mas fluida  */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Animaciones */
 
 .animate-fadeIn {

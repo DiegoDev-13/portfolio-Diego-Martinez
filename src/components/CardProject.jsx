@@ -2,7 +2,7 @@ import { FaGithub } from "react-icons/fa";
 
 export const CardProject = ({project}) => {
   return (
-    <div className="bg-stone-950 rounded-md">
+    <div className="bg-stone-950 rounded-md cursor-pointer hover:-translate-y-3 transition-all duration-300">
         <img src={project.image} alt={project.title}  className="w-full h-60 rounded-t-md"/>
 
         <div className="w-full px-4 pt-4 flex items-center flex-wrap gap-3">
@@ -16,8 +16,8 @@ export const CardProject = ({project}) => {
         </div>
 
         <div className="p-4">
-          <h3 className="text-stone-300 text-[16px] font-semibold">{project.title}</h3> 
-          <p className="text-sm text-stone-500 ">{project.description}</p>
+          <h3 className="text-stone-300 text-[16px] font-bold mb-1">{project.title}</h3> 
+          <p className="text-sm text-stone-400 ">{project.description}</p>
         </div>
 
         <div className="flex gap-4 p-4">

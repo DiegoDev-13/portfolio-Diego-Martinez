@@ -1,3 +1,6 @@
+import { About } from './components/About';
+import { Banner } from './components/Banner';
+import { FormContact } from './components/FormContact';
 import { GridProjects } from './components/GridProjects';
 import { Hero } from './components/Hero';
 import { MobileNavbar } from './components/MobileNavbar';
@@ -20,10 +23,16 @@ function App() {
       <Navbar />
 
 
-      <Hero />
-      <main className='container mx-auto  flex-1'>
+      <main className='flex-1 max-w-400 mx-auto'>
+        <Hero />
 
         <GridProjects />
+
+        <About />
+
+        <FormContact />
+
+        <Banner />
       </main>
     </div>
   )

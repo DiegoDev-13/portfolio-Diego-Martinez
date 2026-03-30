@@ -3,7 +3,7 @@ import { CardProject } from "./CardProject"
 
 export const GridProjects = () => {
   return (
-    <div id="projects" className="w-full flex flex-col justify-center py-10">
+    <div id="projects" className="w-full flex flex-col justify-center p-10">
         <div>
             <h2 className="text-4xl text-white font-bold mb-8">Featured Projects</h2>
         </div>
