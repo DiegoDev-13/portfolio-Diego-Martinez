@@ -39,16 +39,6 @@ export default function CardProfileMotion() {
           cursor: "pointer"
         }}
       >
-        {/* Este texto parecerá "flotar" un poco por encima de la tarjeta */}
-        {/* <h2 style={{ 
-          color: "white", 
-          transform: "translateZ(50px)", // <--- DESPLAZAMIENTO EN Z
-          textShadow: "0 10px 20px rgba(0,0,0,0.5)"
-        }}>
-          Tilt Card
-        </h2> */}
-
-        {/* <img src={diegoProfile} alt="Diego Martinez Foto" className='w-100 h-113 rounded-lg' /> */}
 
         <motion.img
             src={diegoProfile}

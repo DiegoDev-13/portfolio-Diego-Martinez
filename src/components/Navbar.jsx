@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useMobile } from "../context/globalStore";
 import { FaBars } from "react-icons/fa";
 import CV_Diego_Martinez from '../assets/CV_Diego_Martinez.pdf'
+import { MdDownload } from "react-icons/md";
 
 export const Navbar = () => {
   const { toggleActiveMobile } = useMobile();
@@ -41,8 +42,9 @@ export const Navbar = () => {
         <a href="#contact" className="hover:text-stone-300 font-semibold transition-all duration-300">Contact</a>
       </nav>
 
-      <a href={CV_Diego_Martinez} download="CV_Diego_Martinez.pdf" className="bg-purple-700 text-white uppercase px-4 py-2 rounded-lg hidden md:flex hover:bg-purple-600 transition-colors cursor-pointer" >
+      <a href={CV_Diego_Martinez} download="CV_Diego_Martinez.pdf" className="bg-purple-700 text-white font-semibold uppercase px-4 py-2 rounded-lg hidden md:flex justify-center items-center gap-2 hover:bg-purple-600 transition-colors cursor-pointer" >
         download cv
+        <MdDownload size={22} />
       </a>
 
       <button className="bg-stone-700 p-3 rounded-lg md:hidden" onClick={() => toggleActiveMobile()}>

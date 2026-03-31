@@ -6,11 +6,9 @@ import { Hero } from './components/Hero';
 import { MobileNavbar } from './components/MobileNavbar';
 import { Navbar } from './components/Navbar'
 import { useMobile } from './context/globalStore';
-
-
+import { ToastContainer } from 'react-toastify';
 
 function App() {
-
 
   const { isActiveMobile, toggleActiveMobile } = useMobile();
 
@@ -34,7 +32,22 @@ function App() {
 
         <Banner />
       </main>
+
+      <ToastContainer
+        position="bottom-right"
+        autoClose={4000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </div>
+
+
   )
 }
 

@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const Banner = () => {
   return (
-    <banner className="w-full flex justify-between items-center bg-stone-950 h-50 px-10 py-8">
+    <header role="banner" className="w-full flex justify-between items-center bg-stone-950 h-50 px-10 py-8">
         <a href="#hero" className="text-purple-700 font-bold text-lg cursor-pointer">Diego Martinez</a>
 
         <div className="flex justify-center items-center gap-6">
@@ -17,6 +17,6 @@ export const Banner = () => {
         </div>
 
         <span className="text-stone-500 text-[16px]">@ 2026 Diego Martinez. Built with Precision.</span>
-    </banner>
+    </header>
   )
 }
