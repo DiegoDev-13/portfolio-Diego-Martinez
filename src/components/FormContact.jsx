@@ -35,7 +35,7 @@ export const FormContact = () => {
     }
 
   return (
-    <div id="contact" className="w-full p-10 flex flex-col justify-center items-center ">
+    <div id="Contact" className="w-full p-10 flex flex-col justify-center items-center ">
         <h3 className='text-4xl text-white font-bold mb-4'>Start a Connection.</h3>
         <p className="mb-10 w-[40%] text-[16px] text-stone-400 text-center"> 
             Currently accepting selective freelance projects and architecture consultations. Let's build something precise.
@@ -54,7 +54,7 @@ export const FormContact = () => {
                                 <input type="text" name="from_name" id="from_name" required className="w-full bg-stone-900 p-3 rounded-lg text-stone-200" placeholder="John Doe" />
                             </div>
                             <div className="w-full flex flex-col space-y-3">
-                                <label htmlFor="reply_to" className="text-xs text-stone-400 uppercase">identity</label>
+                                <label htmlFor="reply_to" className="text-xs text-stone-400 uppercase">email</label>
                                 <input type="email" name="reply_to" id="reply_to" required className="w-full bg-stone-900 p-3 rounded-lg text-stone-200" placeholder="John@domain.com" />
                             </div>
                         </div>

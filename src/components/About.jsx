@@ -2,7 +2,7 @@ import diegoAbout from '../assets/diegoAbout.png'
 
 export const About = () => {
   return (
-    <div id="about" className="w-ful bg-stone-950 p-10 flex flex-col md:flex-row justify-center space-x-20">
+    <div id="About" className="w-ful bg-stone-950 p-10 flex flex-col md:flex-row justify-center space-x-20">
         <div className=''>
             <img src={diegoAbout} alt="" className='w-100 h-110'/>
         </div>

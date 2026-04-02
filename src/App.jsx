@@ -1,5 +1,6 @@
 import { About } from './components/About';
 import { Banner } from './components/Banner';
+import { Experience } from './components/Experience';
 import { FormContact } from './components/FormContact';
 import { GridProjects } from './components/GridProjects';
 import { Hero } from './components/Hero';
@@ -25,6 +26,8 @@ function App() {
         <Hero />
 
         <GridProjects />
+
+        <Experience />
 
         <About />
 

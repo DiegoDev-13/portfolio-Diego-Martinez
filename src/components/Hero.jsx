@@ -7,7 +7,7 @@ import CardProfileMotion from './CardProfileMotion';
 
 export const Hero = () => {
   return (
-    <section id='hero' className="w-full p-8 flex flex-col justify-between bg-stone-950">
+    <section id='Hero' className="w-full p-8 flex flex-col justify-between bg-stone-950">
         <motion.div initial={{y: 100}} animate={{ y: 0}} className="w-full flex flex-col md:flex-row justify-between py-8">
             <div className="w-full md:w-[60%] flex flex-col space-y-4">
                 <h1 className="text-white text-2xl md-text-3xl font-bold text-center md:text-left">Hola, soy Diego Martinez 
