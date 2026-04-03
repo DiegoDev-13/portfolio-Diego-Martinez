@@ -4,16 +4,19 @@ import { FaBars } from "react-icons/fa";
 import CV_Diego_Martinez from '../assets/CV_Diego_Martinez.pdf'
 import { MdDownload } from "react-icons/md";
 import { TfiWorld } from "react-icons/tfi";
+import { useLanguage } from "../context/LanguageContext";
 
-const navlinks = ['Projects', 'Experience', 'About', 'Contact']
+// const navlinks = ['Projects', 'Experience', 'About', 'Contact']
 
 export const Navbar = () => {
+  // contextos
   const { toggleActiveMobile } = useMobile();
+  const {texts, togleLenguage, language} = useLanguage()
   
   // Estado para controlar si el usuario ha bajado más de 100px
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeTab, setActiveTab] = useState(null);
-  const [language, setLanguage] = useState(false)
+  // const [language, setLanguage] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,7 +45,7 @@ export const Navbar = () => {
       })
     }, observerOptions)
 
-    navlinks.forEach((id) => {
+    texts.navbar.navLinks.forEach((id) => {
       const element = document.getElementById(id)
       if(element) observer.observe(element)
     })
@@ -69,7 +72,7 @@ export const Navbar = () => {
 
       <nav className="hidden md:flex space-x-3 text-stone-400">
         {
-          navlinks.map((link, index) => (
+          texts.navbar.navLinks.map((link, index) => (
             <a href={`#${link}`} key={index}  onClick={() => setActiveTab(link)} className={`${activeTab === link ? "text-purple-600" : "text-gray-400"} hover:text-purple-500 font-semibold transition-all duration-300`}>{link}</a>
 
           ))
@@ -77,16 +80,16 @@ export const Navbar = () => {
       </nav>
 
       <div className="flex justify-center items-center gap-3">
-        <button className="flex justify-center items-center gap-2 text-purple-600 text-sm font-medium px-3 py-1.5 border border-stone-800 rounded-lg cursor-pointer hover:border-purple-700 hover:bg-purple-500/5 transition-all duration-300" onClick={() => setLanguage(!language)}>
+        <button className="flex justify-center items-center gap-2 text-purple-600 text-sm font-medium uppercase px-3 py-1.5 border border-stone-800 rounded-lg cursor-pointer hover:border-purple-700 hover:bg-purple-500/5 transition-all duration-300" onClick={() => togleLenguage()}>
           <TfiWorld size={15} className="text-stone-400" />
           {
-            language ? 'EN' : 'ES'
+            language
           }
         </button>
 
         <a href={CV_Diego_Martinez} download="CV_Diego_Martinez.pdf" className="bg-purple-700 text-white font-semibold uppercase px-4 py-2 rounded-lg hidden md:flex justify-center items-center gap-2 hover:bg-purple-600 transition-colors cursor-pointer" >
           <MdDownload size={22} />
-          download cv
+          {texts.navbar.buttonDownloadCv}
         </a>
       </div>
 

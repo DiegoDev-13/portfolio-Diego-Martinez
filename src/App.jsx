@@ -1,5 +1,5 @@
 import { About } from './components/About';
-import { Banner } from './components/Banner';
+import { Footer } from './components/Footer';
 import { Experience } from './components/Experience';
 import { FormContact } from './components/FormContact';
 import { GridProjects } from './components/GridProjects';
@@ -33,7 +33,7 @@ function App() {
 
         <FormContact />
 
-        <Banner />
+        <Footer />
       </main>
 
       <ToastContainer
