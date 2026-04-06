@@ -21,12 +21,12 @@ export default function CardProfileMotion() {
   };
 
   return (
-    <div style={{ perspective: "1200px" }}> {/* <--- CAMARA 3D AQUÍ */}
+    <div style={{ perspective: "1200px" }}> 
       <motion.div
         onMouseMove={handleMouseMove}
         onMouseLeave={() => { x.set(0); y.set(0); }}
         style={{
-          width: 380,
+          width: 340,
           height: 450,
           rotateX: smoothX,
           rotateY: smoothY,

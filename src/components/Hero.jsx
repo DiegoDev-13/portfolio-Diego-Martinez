@@ -11,8 +11,8 @@ export const Hero = () => {
     const {texts} = useLanguage()
 
   return (
-    <section id='Hero' className="w-full p-8 flex flex-col justify-between bg-stone-950">
-        <motion.div initial={{y: 100}} animate={{ y: 0}} className="w-full flex flex-col md:flex-row justify-between py-8">
+    <section id='Hero' className="w-full p-6 md:p-8 flex flex-col justify-between bg-stone-950">
+        <motion.div initial={{y: 100}} animate={{ y: 0}} className="w-full flex flex-col md:flex-row justify-between py-3 md:py-8">
             <div className="w-full md:w-[60%] flex flex-col space-y-4">
                 <h1 className="text-white text-2xl md-text-3xl font-bold text-center md:text-left">{texts.hero.title} 
                     <br /><span className="text-purple-400 text-5xl md-text-6xl"> {texts.hero.subTitle}</span></h1>
@@ -33,7 +33,7 @@ export const Hero = () => {
                 </div>
             </div>
             
-            <div className="w-full md:w-[37%] flex justify-center items-center">
+            <div className="w-full md:w-[37%] flex justify-center items-center z-20">
                 <CardProfileMotion />  
             </div>
         </motion.div>

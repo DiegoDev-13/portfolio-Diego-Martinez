@@ -38,12 +38,12 @@ export const FormContact = () => {
     }
 
   return (
-    <div id={texts.navbar.navLinks[3]} className="w-full p-10 flex flex-col justify-center items-center ">
-        <h3 className='text-4xl text-white font-bold mb-4'>{texts.contact.title}</h3>
-        <p className="mb-10 w-[40%] text-[16px] text-stone-400 text-center"> 
+    <div id={texts.navbar.navLinks[3]} className="w-full p-6 md:p-10 flex flex-col justify-center items-center ">
+        <h3 className='text-4xl text-white text-center md:text-start font-bold mb-4'>{texts.contact.title}</h3>
+        <p className="mb-10 w-full md:w-[40%] text-[16px] text-stone-400 text-center"> 
             {texts.contact.description}
         </p>
-        <form ref={form} onSubmit={sendEmail} className="bg-stone-950 p-10 w-150 rounded-lg">
+        <form ref={form} onSubmit={sendEmail} className="bg-stone-950 p-5 md:p-10 w-full md:w-150 rounded-lg">
             
             {
                 isLoading 
@@ -51,7 +51,7 @@ export const FormContact = () => {
                         <AiOutlineLoading3Quarters size={70} className="text-stone-300 animate-spin" />
                     </div>
                     : <>
-                        <div className="flex justify-between space-x-5">
+                        <div className="flex flex-col md:flex-row justify-between space-x-5">
                             <div className="w-full flex flex-col space-y-3 transition-all duration-300">
                                 <label htmlFor="from_nam" className="text-xs text-stone-400 uppercase">{texts.contact.labelTexts[0]}</label>
                                 <input type="text" name="from_name" id="from_name" required className="w-full bg-stone-900 p-3 rounded-lg text-stone-200" placeholder="John Doe" />

@@ -6,7 +6,7 @@ export const Footer = () => {
     const {texts} = useLanguage()
 
   return (
-    <footer role="banner" className="w-full flex justify-between items-center bg-stone-950 h-50 px-10 py-8">
+    <footer role="banner" className="w-full flex flex-col md:flex-row justify-between items-center bg-stone-950 md:h-50 px-6 md:px-10 py-8 space-y-4">
         <a href="#Hero" className="text-purple-700 font-bold text-lg cursor-pointer">Diego Martinez</a>
 
         <div className="flex justify-center items-center gap-6">

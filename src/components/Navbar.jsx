@@ -62,9 +62,9 @@ export const Navbar = () => {
   return (
     <header
       className={`
-        w-full sticky top-0 z-50 p-6 px-8 flex items-center justify-between transition-all duration-500 border-b border-stone-700
+        w-full relative md:sticky top-0 z-50 p-6 px-8 flex items-center justify-between transition-all duration-500 border-b border-stone-700
         ${isScrolled 
-          ? "bg-stone-950/90 backdrop-blur-md py-3 shadow-xl translate-y-0" 
+          ? "bg-stone-950/90 backdrop-blur-md md:py-3 shadow-xl translate-y-0" 
           : "bg-stone-950 border-transparent py-6"}
       `}
     >
