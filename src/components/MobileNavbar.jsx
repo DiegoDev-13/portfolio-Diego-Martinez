@@ -13,8 +13,8 @@ export const MobileNavbar = () => {
     }
 
   return (
-    <div className="w-full fixed z-100 h-full backdrop-blur-xs bg-black/10">
-        <div className="w-[70%] h-full bg-stone-950 flex flex-col items-center animate-slideIn ">
+    <div className="w-full fixed z-100 h-full backdrop-blur-xs bg-black/10" onClick={() => toggleActiveMobile()}>
+        <div className="w-[70%] h-full bg-stone-950 flex flex-col items-center animate-slideIn" onClick={(e) => e.stopPropagation()}>
 
             <div className="w-full p-4 mb-10 flex self-end">
                 <button className="self-end" onClick={() => toggleActiveMobile()}>

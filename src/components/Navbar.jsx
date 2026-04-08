@@ -5,8 +5,8 @@ import CV_Diego_Martinez from '../assets/CV_Diego_Martinez.pdf'
 import { MdDownload } from "react-icons/md";
 import { TfiWorld } from "react-icons/tfi";
 import { useLanguage } from "../context/LanguageContext";
+import { motion } from "framer-motion"; 
 
-// const navlinks = ['Projects', 'Experience', 'About', 'Contact']
 
 export const Navbar = () => {
   // contextos
@@ -60,26 +60,40 @@ export const Navbar = () => {
   }, []);
   
   return (
-    <header
+    <motion.header
       className={`
         w-full relative md:sticky top-0 z-50 p-6 px-8 flex items-center justify-between transition-all duration-500 border-b border-stone-700
         ${isScrolled 
-          ? "bg-stone-950/90 backdrop-blur-md md:py-3 shadow-xl translate-y-0" 
+          ? "bg-stone-950/90 backdrop-blur-md py-3 shadow-xl translate-y-0" 
           : "bg-stone-950 border-transparent py-6"}
       `}
     >
-      <a href="#Hero" onClick={() => setActiveTab(null)} className="text-purple-700 font-bold text-lg cursor-pointer">Diego Martinez</a>
+      <motion.a
+        initial={{y: 40, opacity: 0}}
+        animate={{y: 0, opacity: 1}}
+        transition={{duration: 0.6, ease: 'easeOut'}} 
+        href="#Hero" 
+        onClick={() => setActiveTab(null)} 
+        className="text-purple-700 font-bold text-lg cursor-pointer">Diego Martinez</motion.a>
 
-      <nav className="hidden md:flex space-x-3 text-stone-400">
+      <motion.nav 
+        initial={{y: 40, opacity: 0}}
+        animate={{y: 0, opacity: 1}}
+        transition={{duration: 0.6, ease: 'easeOut'}} 
+        className="hidden md:flex space-x-3 text-stone-400">
         {
           texts.navbar.navLinks.map((link, index) => (
             <a href={`#${link}`} key={index}  onClick={() => setActiveTab(link)} className={`${activeTab === link ? "text-purple-600" : "text-gray-400"} hover:text-purple-500 font-semibold transition-all duration-300`}>{link}</a>
 
           ))
         }
-      </nav>
+      </motion.nav>
 
-      <div className="flex justify-center items-center gap-3">
+      <motion.div 
+        initial={{y: 40, opacity: 0}}
+        animate={{y: 0, opacity: 1}}
+        transition={{duration: 0.6, ease: 'easeOut'}} 
+        className="flex justify-center items-center gap-3">
         <button className="flex justify-center items-center gap-2 text-purple-600 text-sm font-medium uppercase px-3 py-1.5 border border-stone-800 rounded-lg cursor-pointer hover:border-purple-700 hover:bg-purple-500/5 transition-all duration-300" onClick={() => togleLenguage()}>
           <TfiWorld size={15} className="text-stone-400" />
           {
@@ -91,11 +105,11 @@ export const Navbar = () => {
           <MdDownload size={22} />
           {texts.navbar.buttonDownloadCv}
         </a>
-      </div>
+      </motion.div>
 
       <button className="bg-stone-700 p-3 rounded-lg md:hidden" onClick={() => toggleActiveMobile()}>
         <FaBars size={23} className="text-stone-400" />
       </button>
-    </header>
+    </motion.header>
   );
 };

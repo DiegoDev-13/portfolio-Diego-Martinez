@@ -16,7 +16,41 @@ const translations = {
         stack: 'Tecnologías'
     },
     projects: {
-        title: "Proyectos Destacados"
+        title: "Proyectos Destacados",
+        projectsData : [
+            {
+                image: 'https://images2.imgbox.com/f6/bf/tACqeIGj_o.png',
+                title: 'AnimeVista',
+                description: 'Aplicación web de streaming de anime con experiencia de usuario personalizada y panel administrativo robusto. Incluye sistema de favoritos, perfiles editables, visualización de episodios y reportes de errores. Implementa un Dashboard interactivo para el control total de contenidos y métricas en tiempo real.',
+                stack: ["Javascript", "React", "Zustand", "TanStack", "Tailwind", "Supabase"],
+                live: 'https://animevista.netlify.app/',
+                github: "https://github.com/DiegoDev-13/Anime-TV",
+            },
+            {
+                image: 'https://images2.imgbox.com/c5/80/HyUlZDrI_o.png',
+                title: 'Mastercell Ecommerce',
+                description: 'Plataforma integral de venta de dispositivos móviles con flujo completo de compra: desde el catálogo con stock dinámico hasta la simulación de pago. Incluye perfiles de usuario para el seguimiento de pedidos en tiempo real y un panel administrativo para el control total de inventario y logística de envíos.',
+                stack: ["Javascript", "React", "Zustand", "TanStack", "Tailwind", "Supabase"],
+                live: 'https://mastercell-diegodev.netlify.app/',
+                github: "https://github.com/DiegoDev-13/Ecommerce-phones",
+            },
+            {
+                image: 'https://images2.imgbox.com/c6/f8/RjIHWTOB_o.png',
+                title: 'Pokedex',
+                description: 'SPA enfocada en la eficiencia de datos. Utiliza TanStack Query para el manejo de caché y fetching asíncrono, y Zustand para una gestión de estado global ligera en la lista de favoritos. Implementa renderizado dinámico de una lista extensa de elementos con carga bajo demanda.',
+                stack: ["Javascript", "React", "Zustand", "TanStack", "Tailwind"],
+                live: 'https://pokedex-diegodev.netlify.app/',
+                github: "https://github.com/DiegoDev-13/pokedex",
+            },
+            {
+                image: 'https://images2.imgbox.com/79/3a/p2NQGGdb_o.png',
+                title: 'RickAdnMorty',
+                description: 'Aplicación enfocada en el manejo de peticiones asíncronas (Fetch API) y la manipulación dinámica del DOM. Incluye lógica de paginación lógica, renderizado de estados de carga y una arquitectura de componentes modular utilizando solo HTML5, CSS3 y JavaScript puro.',
+                stack: ["HTML", "CSS", "Javascript",],
+                live: 'https://rickandmorty-api-js.netlify.app/',
+                github: "https://github.com/DiegoDev-13/RickAndMortyApp",
+            }
+        ]
     },
     experience: {
         title: 'Experiencia',
@@ -74,7 +108,41 @@ const translations = {
         stack: 'tech tack'
     },
     projects: {
-        title: "Featured Projects"
+        title: "Featured Projects",
+        projectsData : [
+            {
+                image: 'https://images2.imgbox.com/f6/bf/tACqeIGj_o.png',
+                title: 'AnimeVista',
+                description: 'Anime streaming web application with a customized user experience and robust admin panel. Includes a favorites system, editable profiles, episode viewing, and error reporting. Implements an interactive dashboard for complete control of content and real-time metrics.',
+                stack: ["Javascript", "React", "Zustand", "TanStack", "Tailwind", "Supabase"],
+                live: 'https://animevista.netlify.app/',
+                github: "https://github.com/DiegoDev-13/Anime-TV",
+            },
+            {
+                image: 'https://images2.imgbox.com/c5/80/HyUlZDrI_o.png',
+                title: 'Mastercell Ecommerce',
+                description: 'A comprehensive mobile device sales platform with a complete purchase flow: from a dynamic stock catalog to payment simulation. Includes user profiles for real-time order tracking and an administrative panel for complete inventory and shipping logistics control.',
+                stack: ["Javascript", "React", "Zustand", "TanStack", "Tailwind", "Supabase"],
+                live: 'https://mastercell-diegodev.netlify.app/',
+                github: "https://github.com/DiegoDev-13/Ecommerce-phones",
+            },
+            {
+                image: 'https://images2.imgbox.com/c6/f8/RjIHWTOB_o.png',
+                title: 'Pokedex',
+                description: 'A data-efficient SPA. It uses TanStack Query for cache management and asynchronous fetching, and Zustand for lightweight global state management in the favorites list. It implements dynamic rendering of a large list of items with on-demand loading.',
+                stack: ["Javascript", "React", "Zustand", "TanStack", "Tailwind"],
+                live: 'https://pokedex-diegodev.netlify.app/',
+                github: "https://github.com/DiegoDev-13/pokedex",
+            },
+            {
+                image: 'https://images2.imgbox.com/79/3a/p2NQGGdb_o.png',
+                title: 'RickAdnMorty',
+                description: 'An application focused on handling asynchronous requests (Fetch API) and dynamic DOM manipulation. It includes logical pagination, load state rendering, and a modular component architecture using only HTML5, CSS3, and pure JavaScript.',
+                stack: ["HTML", "CSS", "Javascript",],
+                live: 'https://rickandmorty-api-js.netlify.app/',
+                github: "https://github.com/DiegoDev-13/RickAndMortyApp",
+            }
+        ]
     },
     experience: {
         title: 'Experience',
